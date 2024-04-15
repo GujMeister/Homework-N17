@@ -1,7 +1,7 @@
 import UIKit
 
 class WelcomeVC: UIViewController {
-    
+    // MARK: - Properties
     let backgroundImageView: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "Background-2")
@@ -23,7 +23,7 @@ class WelcomeVC: UIViewController {
         let button = UIButton()
         button.setTitle("დაწყება", for: .normal)
         button.backgroundColor = UIColor(hex: "0075FF")
-        button.titleLabel?.font = UIFont(name: "FireGO", size: 20)
+        button.titleLabel?.font = UIFont(name: "FiraGO-Regular", size: 20)
         button.layer.cornerRadius = 20
         
         button.addAction(UIAction(handler: { _ in
@@ -36,12 +36,12 @@ class WelcomeVC: UIViewController {
         
         return button
     }()
-
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
-    
+    // MARK: - UI
     func setupUI() {
         view.addSubview(backgroundImageView)
         view.addSubview(welcomeLabel)
@@ -50,7 +50,6 @@ class WelcomeVC: UIViewController {
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         welcomeLabel.translatesAutoresizingMaskIntoConstraints = false
         proceedButton.translatesAutoresizingMaskIntoConstraints = false
-        
         
         NSLayoutConstraint.activate([
             backgroundImageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
@@ -65,16 +64,14 @@ class WelcomeVC: UIViewController {
             proceedButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
         ])
     }
-    
+    // MARK: - Button Function
     func didTapProceedButton() {
         let vc = ViewController()
+        vc.navigationItem.hidesBackButton = true
         navigationController?.pushViewController(vc, animated: true)
     }
-
-
 }
  
 #Preview {
     WelcomeVC()
 }
-

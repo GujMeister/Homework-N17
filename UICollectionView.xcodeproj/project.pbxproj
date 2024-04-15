@@ -18,6 +18,7 @@
 		85842C152BCC2753003369D7 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842C142BCC2753003369D7 /* HexColor.swift */; };
 		85842C172BCC2E20003369D7 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842C162BCC2E20003369D7 /* CardCollectionViewCell.swift */; };
 		85842C1A2BCC84A3003369D7 /* ComplaintData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842C192BCC84A3003369D7 /* ComplaintData.swift */; };
+		85842C1D2BCD524C003369D7 /* FiraGO-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85842C1C2BCD524C003369D7 /* FiraGO-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		85842C142BCC2753003369D7 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		85842C162BCC2E20003369D7 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		85842C192BCC84A3003369D7 /* ComplaintData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplaintData.swift; sourceTree = "<group>"; };
+		85842C1C2BCD524C003369D7 /* FiraGO-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraGO-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 		85842BAE2BCBFA1F003369D7 = {
 			isa = PBXGroup;
 			children = (
+				85842C1C2BCD524C003369D7 /* FiraGO-Bold.ttf */,
 				85842C122BCC0249003369D7 /* FiraGO-Regular.ttf */,
 				85842BB92BCBFA1F003369D7 /* UICollectionView */,
 				85842BB82BCBFA1F003369D7 /* Products */,
@@ -72,10 +75,10 @@
 				85842C182BCC2E34003369D7 /* Collection Cell */,
 				85842BCF2BCBFC1C003369D7 /* WelcomeVC.swift */,
 				85842BBE2BCBFA1F003369D7 /* ViewController.swift */,
+				85842BD12BCBFC47003369D7 /* AddCardVC.swift */,
 				85842BC32BCBFA21003369D7 /* Assets.xcassets */,
 				85842BC52BCBFA21003369D7 /* LaunchScreen.storyboard */,
 				85842BC82BCBFA21003369D7 /* Info.plist */,
-				85842BD12BCBFC47003369D7 /* AddCardVC.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85842BC42BCBFA21003369D7 /* Assets.xcassets in Resources */,
+				85842C1D2BCD524C003369D7 /* FiraGO-Bold.ttf in Resources */,
 				85842BC72BCBFA21003369D7 /* Base in Resources */,
 				85842C132BCC0249003369D7 /* FiraGO-Regular.ttf in Resources */,
 			);
