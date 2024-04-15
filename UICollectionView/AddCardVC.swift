@@ -1,7 +1,6 @@
 import UIKit
 
 class AddCardVC: UIViewController {
-    
     // MARK: - Properties
     //Selected Icon
     var selectedIcon: UIButton?

@@ -15,7 +15,14 @@ class WelcomeVC: UIViewController {
         label.font = UIFont(name: "FiraGo", size: 30)
         label.textColor = .white
         label.numberOfLines = 0
-        label.text = "შედი\nაპლიკაციაში \nდა იწუწუნე \nრამდენიც გინდა"
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 10
+        let attributedText = NSMutableAttributedString(string: "შედი\nაპლიკაციაში \nდა იწუწუნე \nრამდენიც გინდა")
+        attributedText.addAttribute(.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, attributedText.length))
+        
+        label.attributedText = attributedText
+        
         return label
     }()
     
@@ -58,7 +65,7 @@ class WelcomeVC: UIViewController {
             backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             welcomeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 21),
-            welcomeLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 450),
+            welcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 80),
             
             proceedButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             proceedButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
