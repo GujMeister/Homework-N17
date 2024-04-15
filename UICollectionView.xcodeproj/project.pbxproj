@@ -10,9 +10,14 @@
 		85842BBB2BCBFA1F003369D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842BBA2BCBFA1F003369D7 /* AppDelegate.swift */; };
 		85842BBD2BCBFA1F003369D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842BBC2BCBFA1F003369D7 /* SceneDelegate.swift */; };
 		85842BBF2BCBFA1F003369D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842BBE2BCBFA1F003369D7 /* ViewController.swift */; };
-		85842BC22BCBFA1F003369D7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85842BC12BCBFA1F003369D7 /* Base */; };
 		85842BC42BCBFA21003369D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85842BC32BCBFA21003369D7 /* Assets.xcassets */; };
 		85842BC72BCBFA21003369D7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85842BC62BCBFA21003369D7 /* Base */; };
+		85842BD02BCBFC1C003369D7 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842BCF2BCBFC1C003369D7 /* WelcomeVC.swift */; };
+		85842BD22BCBFC47003369D7 /* AddCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842BD12BCBFC47003369D7 /* AddCardVC.swift */; };
+		85842C132BCC0249003369D7 /* FiraGO-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85842C122BCC0249003369D7 /* FiraGO-Regular.ttf */; };
+		85842C152BCC2753003369D7 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842C142BCC2753003369D7 /* HexColor.swift */; };
+		85842C172BCC2E20003369D7 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842C162BCC2E20003369D7 /* CardCollectionViewCell.swift */; };
+		85842C1A2BCC84A3003369D7 /* ComplaintData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85842C192BCC84A3003369D7 /* ComplaintData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +25,15 @@
 		85842BBA2BCBFA1F003369D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85842BBC2BCBFA1F003369D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		85842BBE2BCBFA1F003369D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		85842BC12BCBFA1F003369D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85842BC32BCBFA21003369D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85842BC62BCBFA21003369D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85842BC82BCBFA21003369D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85842BCF2BCBFC1C003369D7 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		85842BD12BCBFC47003369D7 /* AddCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardVC.swift; sourceTree = "<group>"; };
+		85842C122BCC0249003369D7 /* FiraGO-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraGO-Regular.ttf"; sourceTree = "<group>"; };
+		85842C142BCC2753003369D7 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		85842C162BCC2E20003369D7 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		85842C192BCC84A3003369D7 /* ComplaintData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplaintData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,7 @@
 		85842BAE2BCBFA1F003369D7 = {
 			isa = PBXGroup;
 			children = (
+				85842C122BCC0249003369D7 /* FiraGO-Regular.ttf */,
 				85842BB92BCBFA1F003369D7 /* UICollectionView */,
 				85842BB82BCBFA1F003369D7 /* Products */,
 			);
@@ -56,15 +67,43 @@
 		85842BB92BCBFA1F003369D7 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				85842BBA2BCBFA1F003369D7 /* AppDelegate.swift */,
-				85842BBC2BCBFA1F003369D7 /* SceneDelegate.swift */,
+				85842BCE2BCBFAD1003369D7 /* App */,
+				85842C1B2BCC84B3003369D7 /* Model */,
+				85842C182BCC2E34003369D7 /* Collection Cell */,
+				85842BCF2BCBFC1C003369D7 /* WelcomeVC.swift */,
 				85842BBE2BCBFA1F003369D7 /* ViewController.swift */,
-				85842BC02BCBFA1F003369D7 /* Main.storyboard */,
 				85842BC32BCBFA21003369D7 /* Assets.xcassets */,
 				85842BC52BCBFA21003369D7 /* LaunchScreen.storyboard */,
 				85842BC82BCBFA21003369D7 /* Info.plist */,
+				85842BD12BCBFC47003369D7 /* AddCardVC.swift */,
 			);
 			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		85842BCE2BCBFAD1003369D7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				85842BBA2BCBFA1F003369D7 /* AppDelegate.swift */,
+				85842BBC2BCBFA1F003369D7 /* SceneDelegate.swift */,
+				85842C142BCC2753003369D7 /* HexColor.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		85842C182BCC2E34003369D7 /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				85842C162BCC2E20003369D7 /* CardCollectionViewCell.swift */,
+			);
+			path = "Collection Cell";
+			sourceTree = "<group>";
+		};
+		85842C1B2BCC84B3003369D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				85842C192BCC84A3003369D7 /* ComplaintData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +166,7 @@
 			files = (
 				85842BC42BCBFA21003369D7 /* Assets.xcassets in Resources */,
 				85842BC72BCBFA21003369D7 /* Base in Resources */,
-				85842BC22BCBFA1F003369D7 /* Base in Resources */,
+				85842C132BCC0249003369D7 /* FiraGO-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +178,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				85842BBF2BCBFA1F003369D7 /* ViewController.swift in Sources */,
+				85842C152BCC2753003369D7 /* HexColor.swift in Sources */,
 				85842BBB2BCBFA1F003369D7 /* AppDelegate.swift in Sources */,
 				85842BBD2BCBFA1F003369D7 /* SceneDelegate.swift in Sources */,
+				85842C172BCC2E20003369D7 /* CardCollectionViewCell.swift in Sources */,
+				85842BD22BCBFC47003369D7 /* AddCardVC.swift in Sources */,
+				85842BD02BCBFC1C003369D7 /* WelcomeVC.swift in Sources */,
+				85842C1A2BCC84A3003369D7 /* ComplaintData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		85842BC02BCBFA1F003369D7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85842BC12BCBFA1F003369D7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		85842BC52BCBFA21003369D7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,13 +328,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S26B8AV5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UICollectionView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,13 +355,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9S26B8AV5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UICollectionView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
